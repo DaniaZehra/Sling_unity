@@ -8,20 +8,24 @@ public class Movement : MonoBehaviour
     public float initial_velocity = 10.0f;
     public float initial_angle = 45.0f;
     private Rigidbody playerRb;
+    private LineRenderer lineRenderer;
     public float gravity = 10.0f;
     private float JumpForce;
+    public int res = 15;
     private float forwardJumpForce;
-    // Start is called before the first frame update
+    
     void Start()
     {
         playerRb = GetComponent<Rigidbody>(); 
+        lineRenderer =  GetComponent<LineRenderer>();
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
         CalculateJumpForce();
+        Trajectory();
     }
-
-    // Update is called once per frame
     void Update()
     {
-    
         if(Input.GetMouseButtonDown(0)){
             Vector3 jumpDirection = Vector3.up*JumpForce + transform.forward *forwardJumpForce;
             playerRb.AddForce(jumpDirection,ForceMode.Impulse);
@@ -34,10 +38,24 @@ public class Movement : MonoBehaviour
         JumpForce = initial_vertical_velocity*playerRb.mass;
         forwardJumpForce = initial_horizontal_velocity*playerRb.mass;
     }
-    void CalculateEndPoint(){
-        float Angle_Rad = initial_angle*Mathf.Deg2Rad;
-        float range = (initial_velocity * initial_velocity * Mathf.Sin(2*Angle_Rad))/gravity;
-        float height = (initial_velocity*initial_velocity*Mathf.Sin(Angle_Rad)*Mathf.Sin(Angle_Rad))/2*gravity;
-        Vector3 endpoint = new Vector3(range, height, 0f);
+    void Trajectory(){
+        Vector3[] trajectory_points = new Vector3[res];
+        float Ang_Rad = initial_angle*Mathf.Deg2Rad;
+        float Total_time = (2*initial_velocity*Mathf.Sin(Ang_Rad))/gravity;
+        float TimeStep = Total_time/res;
+        for(int i=0;i<res;i++){
+            float time = i*TimeStep;
+            trajectory_points[i] = CalculateEndPoint(time,initial_velocity,Ang_Rad); 
+        }
+        lineRenderer.positionCount = trajectory_points.Length;
+        lineRenderer.SetPositions(trajectory_points);
+
+        
+    }
+    Vector3 CalculateEndPoint(float time, float initial_velocity, float Angle_Rad){
+        float x = initial_velocity * time * Mathf.Cos(Angle_Rad);
+        float y = initial_velocity * time * Mathf.Sin(Angle_Rad) - ((time*time*gravity)/2);
+        Vector3 forwardDirection = transform.forward;
+        return transform.position + (forwardDirection * x) + (Vector3.up * y);
     }
 }
