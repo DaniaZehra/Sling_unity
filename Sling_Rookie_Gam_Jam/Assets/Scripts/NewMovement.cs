@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class NewMovement : MonoBehaviour
 {
     public float initial_velocity = 10.0f;
     public float gravity = 10.0f;
@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
             dragEndPos = Input.mousePosition;
             Vector3 dragVector = dragEndPos - dragStartPos;
 
-            // Calculate angle and velocity based on drag
+            // Calculate angle and velocity based on drag along z-axis
             float dragDistance = dragVector.magnitude;
             float initial_angle = Mathf.Atan2(dragVector.y, dragVector.x) * Mathf.Rad2Deg;
             initial_velocity = dragDistance * 0.1f; // Adjust the multiplier to scale the velocity appropriately
@@ -64,8 +64,8 @@ public class Movement : MonoBehaviour
         float initial_angle = Mathf.Atan2(dragVector.y, dragVector.x) * Mathf.Rad2Deg;
         float angleRad = initial_angle * Mathf.Deg2Rad;
         float initialVerticalVelocity = initial_velocity * Mathf.Sin(angleRad);
-        float initialHorizontalVelocity = initial_velocity * Mathf.Cos(angleRad);
-        Vector3 jumpDirection = (transform.forward * initialHorizontalVelocity) + (Vector3.up * initialVerticalVelocity);
+        float initialForwardVelocity = initial_velocity * Mathf.Cos(angleRad);
+        Vector3 jumpDirection = (transform.forward * initialForwardVelocity) + (Vector3.up * initialVerticalVelocity);
         return jumpDirection;
     }
 
@@ -88,9 +88,8 @@ public class Movement : MonoBehaviour
 
     Vector3 CalculatePosition(float time, float velocity, float angleRad)
     {
-        float x = velocity * time * Mathf.Cos(angleRad);
+        float z = velocity * time * Mathf.Cos(angleRad);
         float y = velocity * time * Mathf.Sin(angleRad) - 0.5f * gravity * time * time;
-        Vector3 forwardDirection = transform.forward;
-        return transform.position + (forwardDirection * x) + (Vector3.up * y);
+        return transform.position + (Vector3.forward * z) + (Vector3.up * y);
     }
 }
