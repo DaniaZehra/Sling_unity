@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewMovement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public float initial_velocity = 10.0f;
     public float gravity = 10.0f;
@@ -29,24 +29,34 @@ public class NewMovement : MonoBehaviour
         lineRenderer.startWidth = 0.1f;
         lineRenderer.endWidth = 0.1f;
     }
-
+     bool MouseClicked(){
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             if(Physics.Raycast(ray,out hit)){
+                if (hit.transform.name == "Sphere")
+                {
+                    return true;
+                }
+            }
+            return false;
+   }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            isDragging = true;
-            dragStartPos = Input.mousePosition;
+            if(MouseClicked()){ 
+                isDragging = true;
+                dragStartPos = Input.mousePosition;}
+           
         }
 
         if (Input.GetMouseButton(0) && isDragging)
         {
             dragEndPos = Input.mousePosition;
             Vector3 dragVector = dragEndPos - dragStartPos;
-
-            // Calculate angle and velocity based on drag along z-axis
             float dragDistance = dragVector.magnitude;
             float initial_angle = Mathf.Atan2(dragVector.y, dragVector.x) * Mathf.Rad2Deg;
-            initial_velocity = dragDistance * 0.1f; // Adjust the multiplier to scale the velocity appropriately
+            initial_velocity = dragDistance * 0.1f;
             Trajectory(initial_velocity, initial_angle);
         }
 
@@ -64,8 +74,8 @@ public class NewMovement : MonoBehaviour
         float initial_angle = Mathf.Atan2(dragVector.y, dragVector.x) * Mathf.Rad2Deg;
         float angleRad = initial_angle * Mathf.Deg2Rad;
         float initialVerticalVelocity = initial_velocity * Mathf.Sin(angleRad);
-        float initialForwardVelocity = initial_velocity * Mathf.Cos(angleRad);
-        Vector3 jumpDirection = (transform.forward * initialForwardVelocity) + (Vector3.up * initialVerticalVelocity);
+        float initialHorizontalVelocity = initial_velocity * Mathf.Cos(angleRad);
+        Vector3 jumpDirection = (transform.forward * initialHorizontalVelocity) + (Vector3.up * initialVerticalVelocity);
         return jumpDirection;
     }
 
@@ -88,8 +98,9 @@ public class NewMovement : MonoBehaviour
 
     Vector3 CalculatePosition(float time, float velocity, float angleRad)
     {
-        float z = velocity * time * Mathf.Cos(angleRad);
+        float x = velocity * time * Mathf.Cos(angleRad);
         float y = velocity * time * Mathf.Sin(angleRad) - 0.5f * gravity * time * time;
-        return transform.position + (Vector3.forward * z) + (Vector3.up * y);
+        Vector3 forwardDirection = transform.forward;
+        return transform.position + (forwardDirection * x) + (Vector3.up * y);
     }
 }
