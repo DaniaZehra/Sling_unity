@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     private LineRenderer lineRenderer;
     private Vector3 dragStartPos;
     private Vector3 dragEndPos;
+    private float velocity_multiplier = 0.3f;
     private bool isDragging = false;
 
     void Start()
@@ -42,7 +43,7 @@ public class Movement : MonoBehaviour
    }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             if(MouseClicked()){ 
                 isDragging = true;
@@ -54,9 +55,9 @@ public class Movement : MonoBehaviour
         {
             dragEndPos = Input.mousePosition;
             Vector3 dragVector = dragEndPos - dragStartPos;
-            float dragDistance = dragVector.magnitude;
+            float dragDistance = dragVector.magnitude*velocity_multiplier;
             float initial_angle = Mathf.Atan2(dragVector.y, dragVector.x) * Mathf.Rad2Deg;
-            initial_velocity = dragDistance * 0.1f;
+            initial_velocity = dragDistance * velocity_multiplier;
             Trajectory(initial_velocity, initial_angle);
         }
 
