@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private LineRenderer lineRenderer;
     private Vector3 dragStartPos;
     private Vector3 dragEndPos;
-    private float velocity_multiplier = 0.3f;
+    private float velocity_multiplier = 0.75f;
     private bool isDragging = false;
 
     void Start()
@@ -20,12 +20,8 @@ public class Movement : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         lineRenderer = GetComponent<LineRenderer>();
 
-        if (lineRenderer == null)
-        {
-            Debug.LogError("LineRenderer component not found on the GameObject.");
-            return;
-        }
-
+        playerRb.useGravity = false;
+        playerRb.isKinematic = true;
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.startWidth = 0.1f;
         lineRenderer.endWidth = 0.1f;
@@ -43,11 +39,10 @@ public class Movement : MonoBehaviour
    }
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (MouseClicked())
         {
-            if(MouseClicked()){ 
                 isDragging = true;
-                dragStartPos = Input.mousePosition;}
+                dragStartPos = Input.mousePosition;
            
         }
 
@@ -64,8 +59,11 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && isDragging)
         {
             isDragging = false;
+            playerRb.useGravity = true;
+            playerRb.isKinematic = false;
             Vector3 jumpDirection = CalculateJumpDirection();
             playerRb.AddForce(jumpDirection, ForceMode.Impulse);
+           
         }
     }
 
