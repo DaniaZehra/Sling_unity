@@ -122,6 +122,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &487548118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487548119}
+  m_Layer: 0
+  m_Name: launchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487548119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487548118}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.08396198, y: -0.8548094, z: 0.12980817, w: 0.49537984}
+  m_LocalPosition: {x: 0.04, y: 0, z: -0.05}
+  m_LocalScale: {x: 1.3333331, y: 1.3333333, z: 1.333333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 687401716}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &687401709
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +167,7 @@ GameObject:
   - component: {fileID: 687401713}
   - component: {fileID: 687401712}
   - component: {fileID: 687401711}
-  - component: {fileID: 687401710}
+  - component: {fileID: 687401717}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -144,21 +175,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &687401710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687401709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe42bbe420347b4d82e74ffc0a7f274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initial_velocity: 10
-  gravity: 10
-  res: 15
 --- !u!120 &687401711
 LineRenderer:
   serializedVersion: 2
@@ -373,9 +389,27 @@ Transform:
   m_LocalPosition: {x: 7.09, y: -0.18, z: 2.12}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 487548119}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 7.975, y: 118.695, z: -15.951}
+--- !u!114 &687401717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687401709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3619d4f3988bf3841ae123254f7799de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPoint: {fileID: 487548119}
+  startMousePosition: {x: 0, y: 0, z: 0}
+  endMousePosition: {x: 0, y: 0, z: 0}
+  maxLaunchForce: 15
+  trajectoryLine: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
