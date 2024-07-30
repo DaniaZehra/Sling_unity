@@ -264,6 +264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermit Robot Red (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7939240416965329095, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -271,13 +275,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 20253230}
   m_SourcePrefab: {fileID: 100100000, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
 --- !u!4 &20253228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
   m_PrefabInstance: {fileID: 20253227}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &20253229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+  m_PrefabInstance: {fileID: 20253227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &20253230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20253229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &30329542
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermit Robot Red (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7939240416965329095, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -531,13 +559,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247285944}
   m_SourcePrefab: {fileID: 100100000, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
 --- !u!4 &247285942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
   m_PrefabInstance: {fileID: 247285941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &247285943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+  m_PrefabInstance: {fileID: 247285941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &247285944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247285943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &318907670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermit Robot Red
       objectReference: {fileID: 0}
+    - target: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7939240416965329095, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1257,13 +1309,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 849737972}
   m_SourcePrefab: {fileID: 100100000, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
 --- !u!4 &849737970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
   m_PrefabInstance: {fileID: 849737969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &849737971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+  m_PrefabInstance: {fileID: 849737969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &849737972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849737971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &879402677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2092,6 +2164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermit Robot Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7939240416965329095, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2099,13 +2175,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1579454820}
   m_SourcePrefab: {fileID: 100100000, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
 --- !u!4 &1579454818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
   m_PrefabInstance: {fileID: 1579454817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1579454819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+  m_PrefabInstance: {fileID: 1579454817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1579454820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579454819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1588628422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2166,6 +2262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hermit Robot Red (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7939240416965329095, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2173,13 +2273,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1588628425}
   m_SourcePrefab: {fileID: 100100000, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
 --- !u!4 &1588628423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
   m_PrefabInstance: {fileID: 1588628422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1588628424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
+  m_PrefabInstance: {fileID: 1588628422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588628425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588628424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1612091307
 PrefabInstance:
   m_ObjectHideFlags: 0
