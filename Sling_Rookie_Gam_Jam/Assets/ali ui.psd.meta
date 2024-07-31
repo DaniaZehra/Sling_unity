@@ -1,127 +1,1126 @@
 fileFormatVersion: 2
 guid: 26d4a93a90f8e2644828eb094397be88
-TextureImporter:
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
-  mipmaps:
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
     mipMapMode: 0
     enableMipMap: 1
-    sRGBTexture: 1
-    linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
-  bumpmap:
     convertToNormalMap: 0
-    externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMipmapLimit: 0
-  grayScaleToAlpha: 0
-  generateCubemap: 6
-  cubemapConvolution: 0
-  seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
-  textureSettings:
-    serializedVersion: 2
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-  spriteExtrude: 1
-  spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-  textureShape: 1
-  singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
-  maxTextureSizeSet: 0
-  compressionQualitySet: 0
-  textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 2
-  platformSettings:
-  - serializedVersion: 3
-    buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
     spriteID: 
-    internalID: 0
+    spriteBone: []
+    spriteOutline: []
     vertices: []
+    spritePhysicsOutline: []
     indices: 
     edges: []
-    weights: []
-    secondaryTextures: []
-    nameFileIdTable: {}
-  mipmapLimitGroupName: 
-  pSDRemoveMatte: 1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: pngwing.com (3)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3482
+      y: 1527
+      width: 102
+      height: 112
+    spriteID: 92e6904329bcf884db08c767b9cc8a5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3482, y: 1527}
+    spritePosition: {x: 866, y: 129}
+  - name: ad-block-icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 1687
+      width: 124
+      height: 124
+    spriteID: d77b061a0d2266f4f9080cc88e93e0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3298, y: 1687}
+    spritePosition: {x: 112, y: 249}
+  - name: button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 714
+      width: 208
+      height: 208
+    spriteID: c1cb1ae1dafae6b4d84e5a8a3ca1816c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3297, y: 713}
+    spritePosition: {x: 70, y: 207}
+  - name: pngwing.com (1)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3430
+      y: 1687
+      width: 123
+      height: 103
+    spriteID: c413a70666d47d44088749509af03341
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3430, y: 1687}
+    spritePosition: {x: 505, y: 130}
+  - name: pngwing.com
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3599
+      y: 68
+      width: 116
+      height: 98
+    spriteID: a9aa260df6db0294fab32d0900c0d3d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3599, y: 68}
+    spritePosition: {x: 1193, y: 262}
+  - name: pngwing.com (5)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2854
+      y: 1692
+      width: 176
+      height: 152
+    spriteID: 4198fdd56bc7309419742d9e8db565c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2854, y: 1692}
+    spritePosition: {x: 901, y: 1296}
+  - name: button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2854
+      y: 1476
+      width: 208
+      height: 208
+    spriteID: 66a45da0db2b6fd4db78f6ba3d5704cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2853, y: 1475}
+    spritePosition: {x: 462, y: 78}
+  - name: button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3070
+      y: 1476
+      width: 208
+      height: 208
+    spriteID: 91f796ea431a7bd4ca37b9aa4eb6b189
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3069, y: 1475}
+    spritePosition: {x: 1147, y: 207}
+  - name: Capa 211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2854
+      y: 714
+      width: 436
+      height: 373
+    spriteID: d96381d52676bbd4ca34db1666be1a6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2854, y: 714}
+    spritePosition: {x: 488, y: 1369}
+  - name: Capa 211 copia 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2854
+      y: 1095
+      width: 436
+      height: 373
+    spriteID: 8202e00e5ae1ec34fb87b3448b8a5791
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2854, y: 1095}
+    spritePosition: {x: 488, y: 1369}
+  - name: pngwing.com (5)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3070
+      y: 1692
+      width: 176
+      height: 152
+    spriteID: 62fa6fc4345b08f48953dc806a9ee9a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3070, y: 1692}
+    spritePosition: {x: 778, y: 1666}
+  - name: pngwing.com (5)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 930
+      width: 176
+      height: 152
+    spriteID: 6505eee4b8261bc4c9eb0133569ad1d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3298, y: 930}
+    spritePosition: {x: 400, y: 1514}
+  - name: pngwing.com (4)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1902
+      width: 1417
+      height: 404
+    spriteID: 878b1573a2ada9e4499c54f70019ffa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1902}
+    spritePosition: {x: 0, y: 1486}
+  - name: tap to play
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3599
+      y: 4
+      width: 479
+      height: 56
+    spriteID: dfc6d86b79369e84ba33eb0bc9138551
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3599, y: 4}
+    spritePosition: {x: 488, y: 465}
+  - name: file (5)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2854
+      y: 4
+      width: 737
+      height: 702
+    spriteID: 5f66578e918f9884b8c5da210adc5931
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2854, y: 4}
+    spritePosition: {x: 340, y: 594}
+  - name: button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 1095
+      width: 208
+      height: 208
+    spriteID: 0136dcbf2201fcb45aafe2ed4fcc8501
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3297, y: 1094}
+    spritePosition: {x: 820, y: 78}
+  - name: button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 1311
+      width: 208
+      height: 208
+    spriteID: 32caa6ac5adce67499c7ce7304a66c66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3297, y: 1310}
+    spritePosition: {x: 604, y: 853}
+  - name: pngwing.com (5)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3298
+      y: 1527
+      width: 176
+      height: 152
+    spriteID: 3218fba7a7e87c5448c9371bcf39cd6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3298, y: 1527}
+    spritePosition: {x: 620, y: 869}
+  - name: BG_icy_feature (1)
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1417
+      height: 1890
+    spriteID: f131516402c18c142a51410295c8c12d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1429
+      y: 4
+      width: 1417
+      height: 1890
+    spriteID: 9ecc99b0dacbfa243868d2f667ac413d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1429, y: 4}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: pngwing.com (3)
+    spriteName: pngwing.com (3)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 92e6904329bcf884db08c767b9cc8a5c
+    layerID: 69
+    mosaicPosition: {x: 3482, y: 1527}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ad-block-icon
+    spriteName: ad-block-icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d77b061a0d2266f4f9080cc88e93e0a1
+    layerID: 67
+    mosaicPosition: {x: 3298, y: 1687}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: button
+    spriteName: button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c1cb1ae1dafae6b4d84e5a8a3ca1816c
+    layerID: 58
+    mosaicPosition: {x: 3298, y: 714}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pngwing.com (1)
+    spriteName: pngwing.com (1)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c413a70666d47d44088749509af03341
+    layerID: 62
+    mosaicPosition: {x: 3430, y: 1687}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pngwing.com
+    spriteName: pngwing.com
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9aa260df6db0294fab32d0900c0d3d8
+    layerID: 61
+    mosaicPosition: {x: 3599, y: 68}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pngwing.com (5)
+    spriteName: pngwing.com (5)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4198fdd56bc7309419742d9e8db565c9
+    layerID: 74
+    mosaicPosition: {x: 2854, y: 1692}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: button
+    spriteName: button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66a45da0db2b6fd4db78f6ba3d5704cb
+    layerID: 57
+    mosaicPosition: {x: 2854, y: 1476}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: button
+    spriteName: button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 91f796ea431a7bd4ca37b9aa4eb6b189
+    layerID: 54
+    mosaicPosition: {x: 3070, y: 1476}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TEXT COLOR
+    spriteName: TEXT COLOR
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5fd1bfeca4540f4cad1b1c9f746cac0
+    layerID: 52
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Elements
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 0da814d4ab7de1445b5f4b882d5df884
+    layerID: 51
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 211
+    spriteName: Capa 211
+    isGroup: 0
+    parentIndex: 9
+    spriteID: d96381d52676bbd4ca34db1666be1a6f
+    layerID: 50
+    mosaicPosition: {x: 2854, y: 714}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 211 copia 3
+    spriteName: Capa 211 copia 3
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 8202e00e5ae1ec34fb87b3448b8a5791
+    layerID: 49
+    mosaicPosition: {x: 2854, y: 1095}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 211 copia 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 16ff261595371004dad92e4698904a3d
+    layerID: 48
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: pngwing.com (5)
+    spriteName: pngwing.com (5)
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 62fa6fc4345b08f48953dc806a9ee9a0
+    layerID: 76
+    mosaicPosition: {x: 3070, y: 1692}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 211 copia 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 325cd7bb1a5b12b4188ff143b57c1938
+    layerID: 47
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: pngwing.com (5)
+    spriteName: pngwing.com (5)
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 6505eee4b8261bc4c9eb0133569ad1d8
+    layerID: 71
+    mosaicPosition: {x: 3298, y: 930}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 211 copia 6
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: e06002232d8af2040b09b991738f9e98
+    layerID: 46
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 7
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 986676d1b7fdc4345935658e34aa2919
+    layerID: 45
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 8
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: b43a0c6109df3f8459e643c7c699a8ff
+    layerID: 44
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 9
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 001134900cc1244419d7932494f04daf
+    layerID: 43
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 10
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 50a7e72a04deb82409e88aee6498e0ec
+    layerID: 42
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 11
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 4e6553fa87e2afc4599349e070e4f980
+    layerID: 41
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 12
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 8b912026939cc9c408f7258635839fd2
+    layerID: 40
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 13
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 79a2d5563a642954eafb06315d890143
+    layerID: 39
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Capa 211 copia 14
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 7f6b5338f4df66948aaf54845beddf98
+    layerID: 38
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: pngwing.com (4)
+    spriteName: pngwing.com (4)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 878b1573a2ada9e4499c54f70019ffa7
+    layerID: 70
+    mosaicPosition: {x: 4, y: 1902}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tap to play
+    spriteName: tap to play
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dfc6d86b79369e84ba33eb0bc9138551
+    layerID: 5
+    mosaicPosition: {x: 3599, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: file (5)
+    spriteName: file (5)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5f66578e918f9884b8c5da210adc5931
+    layerID: 4
+    mosaicPosition: {x: 2854, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: button
+    spriteName: button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0136dcbf2201fcb45aafe2ed4fcc8501
+    layerID: 56
+    mosaicPosition: {x: 3298, y: 1095}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: button
+    spriteName: button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 32caa6ac5adce67499c7ce7304a66c66
+    layerID: 73
+    mosaicPosition: {x: 3298, y: 1311}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pngwing.com (5)
+    spriteName: pngwing.com (5)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3218fba7a7e87c5448c9371bcf39cd6e
+    layerID: 75
+    mosaicPosition: {x: 3298, y: 1527}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BG_icy_feature (1)
+    spriteName: BG_icy_feature (1)
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f131516402c18c142a51410295c8c12d
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Background
+    spriteName: Background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9ecc99b0dacbfa243868d2f667ac413d
+    layerID: 1
+    mosaicPosition: {x: 1429, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting:
+  - spriteId: d77b061a0d2266f4f9080cc88e93e0a1
+    name: ad-block-icon
+    layerId: 67
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: c1cb1ae1dafae6b4d84e5a8a3ca1816c
+    name: button
+    layerId: 58
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: c413a70666d47d44088749509af03341
+    name: pngwing.com (1)
+    layerId: 62
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: a9aa260df6db0294fab32d0900c0d3d8
+    name: pngwing.com
+    layerId: 61
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 66a45da0db2b6fd4db78f6ba3d5704cb
+    name: button
+    layerId: 57
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 91f796ea431a7bd4ca37b9aa4eb6b189
+    name: button
+    layerId: 54
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: c5fd1bfeca4540f4cad1b1c9f746cac0
+    name: TEXT COLOR
+    layerId: 52
+    flatten: 0
+    isGroup: 0
+    importLayer: 0
+  - spriteId: 4198fdd56bc7309419742d9e8db565c9
+    name: pngwing.com (5)
+    layerId: 74
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: f131516402c18c142a51410295c8c12d
+    name: BG_icy_feature (1)
+    layerId: 2
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 3218fba7a7e87c5448c9371bcf39cd6e
+    name: pngwing.com (5)
+    layerId: 75
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 32caa6ac5adce67499c7ce7304a66c66
+    name: button
+    layerId: 73
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 0136dcbf2201fcb45aafe2ed4fcc8501
+    name: button
+    layerId: 56
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 5f66578e918f9884b8c5da210adc5931
+    name: file (5)
+    layerId: 4
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: dfc6d86b79369e84ba33eb0bc9138551
+    name: tap to play
+    layerId: 5
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 878b1573a2ada9e4499c54f70019ffa7
+    name: pngwing.com (4)
+    layerId: 70
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 0da814d4ab7de1445b5f4b882d5df884
+    name: Elements
+    layerId: 51
+    flatten: 0
+    isGroup: 1
+    importLayer: 1
+  - spriteId: d96381d52676bbd4ca34db1666be1a6f
+    name: Capa 211
+    layerId: 50
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 8202e00e5ae1ec34fb87b3448b8a5791
+    name: Capa 211 copia 3
+    layerId: 49
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 62fa6fc4345b08f48953dc806a9ee9a0
+    name: pngwing.com (5)
+    layerId: 76
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 6505eee4b8261bc4c9eb0133569ad1d8
+    name: pngwing.com (5)
+    layerId: 71
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 92e6904329bcf884db08c767b9cc8a5c
+    name: pngwing.com (3)
+    layerId: 69
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 16ff261595371004dad92e4698904a3d
+    name: Capa 211 copia 4
+    layerId: 48
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 325cd7bb1a5b12b4188ff143b57c1938
+    name: Capa 211 copia 5
+    layerId: 47
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: e06002232d8af2040b09b991738f9e98
+    name: Capa 211 copia 6
+    layerId: 46
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 986676d1b7fdc4345935658e34aa2919
+    name: Capa 211 copia 7
+    layerId: 45
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: b43a0c6109df3f8459e643c7c699a8ff
+    name: Capa 211 copia 8
+    layerId: 44
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 001134900cc1244419d7932494f04daf
+    name: Capa 211 copia 9
+    layerId: 43
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 50a7e72a04deb82409e88aee6498e0ec
+    name: Capa 211 copia 10
+    layerId: 42
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 4e6553fa87e2afc4599349e070e4f980
+    name: Capa 211 copia 11
+    layerId: 41
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 8b912026939cc9c408f7258635839fd2
+    name: Capa 211 copia 12
+    layerId: 40
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 79a2d5563a642954eafb06315d890143
+    name: Capa 211 copia 13
+    layerId: 39
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  - spriteId: 7f6b5338f4df66948aaf54845beddf98
+    name: Capa 211 copia 14
+    layerId: 38
+    flatten: 0
+    isGroup: 0
+    importLayer: 1
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
