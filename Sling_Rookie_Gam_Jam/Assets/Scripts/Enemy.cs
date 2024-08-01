@@ -5,10 +5,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     static int totalEnemies = 3;
+    private Animator animator;
 
     void Start()
     {
         Debug.Log("Remaining Enemies: " + totalEnemies);
+        animator = GetComponent<Animator>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -17,7 +19,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Enemy hit by player. Destroying enemy!");
             totalEnemies--;
-            Destroy(gameObject);
+            StartCoroutine(EnemyKillSequence());
 
             if (totalEnemies > 0)
             {
@@ -30,4 +32,15 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    IEnumerator EnemyKillSequence()
+    {
+        // Trigger kill animation
+        animator.SetTrigger("TriKill");
+
+        // Wait for 1 second
+        yield return new WaitForSeconds(0.5f);
+
+        // Destroy enemy game object
+        Destroy(gameObject);
+    }
 }
