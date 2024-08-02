@@ -5,11 +5,12 @@ using UnityEngine;
 public class Movement_part2 : MonoBehaviour
 {
     public Transform launchPoint;
+    public float gravity_multiplier = 0.5f;
     public Vector3 startMousePosition;
     public Vector3 endMousePosition;
     bool IsAiming;
-    public float maxLaunchForce = 7.5f;
-    public LineRenderer trajectoryLine;
+    public float maxLaunchForce = 35f;
+    private LineRenderer trajectoryLine;
     public bool destroyed = false;
 
     private Rigidbody rb;
@@ -19,25 +20,30 @@ public class Movement_part2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
+        rb.useGravity = false;
         trajectoryLine = GetComponent<LineRenderer>();
         trajectoryLine.material = new Material(Shader.Find("Sprites/Default"));
         trajectoryLine.startWidth = 0.1f;
         trajectoryLine.endWidth = 0.1f;
     }
 
-    void OnCollisionEnter(Collision collision){
-        if(collision.gameObject.name=="Plane"){
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Plane")
+        {
             Destroy(gameObject);
         }
     }
+
 
     public void UpdateAim(Vector3 start, Vector3 end)
     {
         startMousePosition = start;
         endMousePosition = end;
+
         Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
-        float aimDistance = Vector3.Distance(endMousePosition, startMousePosition);
-        float launchForce = Mathf.Clamp(aimDistance, 0, maxLaunchForce);
+
+        float launchForce = maxLaunchForce; // Constant launch force
 
         ShowTrajectory(aimDirection, launchForce);
     }
@@ -48,17 +54,19 @@ public class Movement_part2 : MonoBehaviour
         endMousePosition = end;
 
         Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
-        float aimDistance = Vector3.Distance(endMousePosition, startMousePosition);
-        float launchForce = Mathf.Clamp(aimDistance, 0, maxLaunchForce);
+        float launchForce = maxLaunchForce; // Constant launch force
 
         rb.isKinematic = false;
-        rb.velocity = aimDirection * launchForce; // Set velocity directly
+        rb.velocity = aimDirection * launchForce; // Apply high initial velocity
 
+        Debug.Log("velocity: " + rb.velocity);
+        Debug.Log("launchForce: " + launchForce);
+        Destroy(gameObject,5.0f);
     }
 
     void ShowTrajectory(Vector3 direction, float force)
     {
-        int resolution = 20;
+        int resolution = 35;
         float stepSize = 0.1f;
         Vector3[] points = new Vector3[resolution];
 

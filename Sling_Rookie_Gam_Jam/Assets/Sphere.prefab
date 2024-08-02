@@ -257,8 +257,7 @@ MonoBehaviour:
   startMousePosition: {x: 0, y: 0, z: 0}
   endMousePosition: {x: 0, y: 0, z: 0}
   maxLaunchForce: 7.5
-  trajectoryLine: {fileID: 0}
-  destroyed: 0
+  destroyed: 1
 --- !u!65 &2457705932412939612
 BoxCollider:
   m_ObjectHideFlags: 0

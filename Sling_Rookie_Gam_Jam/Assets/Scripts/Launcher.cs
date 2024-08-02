@@ -6,7 +6,7 @@ public class Launcher : MonoBehaviour
 {
     public GameObject ballPrefab;
     public Transform spawnPosition;
-    public float maxLaunchForce = 7.5f;
+    public float maxLaunchForce = 35f;
     private GameObject currentBall;
     private Rigidbody rb;
 
@@ -15,7 +15,7 @@ public class Launcher : MonoBehaviour
     private Vector3 endMousePosition;
 
     public LineRenderer trajectoryLine;
-    public float recoilForceMagnitude = 3.0f;
+    public float recoilForceMagnitude = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -46,13 +46,13 @@ public class Launcher : MonoBehaviour
             isAiming = true;
             startMousePosition = Input.mousePosition;
 
-             if (currentBall == null)
+        if (currentBall == null)
         {
             SpawnObject();
         }
         }
 
-        if (Input.GetMouseButton(0) && isAiming)
+        if (Input.GetMouseButton(0) && isAiming && currentBall!=null)
         {
             endMousePosition = Input.mousePosition;
             Movement_part2 movementScript = currentBall.GetComponent<Movement_part2>();
@@ -62,7 +62,7 @@ public class Launcher : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonUp(0) && isAiming)
+        if (Input.GetMouseButtonUp(0) && isAiming && currentBall!=null)
         {
             isAiming = false;
             endMousePosition = Input.mousePosition;
@@ -76,7 +76,7 @@ public class Launcher : MonoBehaviour
 
             Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
             Vector3 recoilForce = -aimDirection * recoilForceMagnitude;
-            rb.AddForce(recoilForce, ForceMode.Impulse);
+            rb.AddForce(recoilForce, ForceMode.Acceleration);
 
         }
     }
