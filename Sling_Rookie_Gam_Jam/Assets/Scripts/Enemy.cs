@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    static int totalEnemies = 3;
+    static int totalEnemies = 1;
     private Animator animator;
 
     void Start()
@@ -27,7 +27,8 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                Debug.Log("All enemies killed!");
+                Debug.Log("Enemy killed!");
+                Debug.Log("Level_1 completed");
             }
         }
     }
@@ -38,7 +39,7 @@ public class Enemy : MonoBehaviour
         animator.SetTrigger("TriKill");
 
         // Wait for 1 second
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
 
         // Destroy enemy game object
         Destroy(gameObject);
