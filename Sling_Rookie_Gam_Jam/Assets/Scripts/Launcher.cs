@@ -32,6 +32,9 @@ public class Launcher : MonoBehaviour
     void Update()
     {
         HandleAimingAndShooting();
+        if(currentBall == null){
+            SpawnObject();
+        }
     }
 
     void SpawnObject()
