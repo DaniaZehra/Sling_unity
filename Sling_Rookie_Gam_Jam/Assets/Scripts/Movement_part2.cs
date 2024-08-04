@@ -5,7 +5,6 @@ using UnityEngine;
 public class Movement_part2 : MonoBehaviour
 {
     public Transform launchPoint;
-    public float gravity_multiplier = 0.5f;
     public Vector3 startMousePosition;
     public Vector3 endMousePosition;
     bool IsAiming;
@@ -29,7 +28,7 @@ public class Movement_part2 : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Plane")
+        if (collision.gameObject.name == "Hermit Robot Red")
         {
             Destroy(gameObject);
         }
@@ -43,9 +42,7 @@ public class Movement_part2 : MonoBehaviour
 
         Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
 
-        float launchForce = maxLaunchForce; // Constant launch force
-
-        ShowTrajectory(aimDirection, launchForce);
+        ShowTrajectory(aimDirection, maxLaunchForce);
     }
 
     public void Launch(Vector3 start, Vector3 end)
@@ -54,14 +51,14 @@ public class Movement_part2 : MonoBehaviour
         endMousePosition = end;
 
         Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
-        float launchForce = maxLaunchForce; // Constant launch force
+         Debug.Log("maunchForce: " + maxLaunchForce);
 
         rb.isKinematic = false;
-        rb.velocity = aimDirection * launchForce; // Apply high initial velocity
+        rb.velocity = aimDirection * maxLaunchForce;// Apply high initial velocity
 
         Debug.Log("velocity: " + rb.velocity);
-        Debug.Log("launchForce: " + launchForce);
-        Destroy(gameObject,5.0f);
+        Debug.Log("launchForce: " + maxLaunchForce);
+        Destroy(gameObject,2.0f);
     }
 
     void ShowTrajectory(Vector3 direction, float force)

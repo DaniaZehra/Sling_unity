@@ -206,6 +206,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &252343043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2332108309045594747, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+  m_PrefabInstance: {fileID: 524029667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &252343045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252343043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e43700473590141ab1a4e44efa92b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicButton: {fileID: 252343046}
+--- !u!114 &252343046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252343043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &321726006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -429083066526487457, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+  m_PrefabInstance: {fileID: 524029667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &524029667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,6 +341,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopButton
       objectReference: {fileID: 0}
+    - target: {fileID: -2149026892217503808, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1031
+      objectReference: {fileID: 0}
+    - target: {fileID: -2149026892217503808, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0882
+      objectReference: {fileID: 0}
+    - target: {fileID: -2149026892217503808, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -2149026892217503808, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.73
+      objectReference: {fileID: 0}
     - target: {fileID: 418439542189488498, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
       propertyPath: m_Name
       value: SoundButton
@@ -298,6 +381,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 10.7
       objectReference: {fileID: 0}
+    - target: {fileID: 7480274150430653857, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_Color.b
+      value: 0.383811
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480274150430653857, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_Color.g
+      value: 0.383811
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480274150430653857, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7075472
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -307,7 +402,16 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -429083066526487457, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1910993774}
+      addedObject: {fileID: 1910993778}
+    - targetCorrespondingSourceObject: {fileID: -429083066526487457, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1910993777}
+    - targetCorrespondingSourceObject: {fileID: 2332108309045594747, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252343046}
+    - targetCorrespondingSourceObject: {fileID: 2332108309045594747, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252343045}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
 --- !u!4 &524029668 stripped
 Transform:
@@ -568,24 +672,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1910993772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -429083066526487457, guid: 26d4a93a90f8e2644828eb094397be88, type: 3}
-  m_PrefabInstance: {fileID: 524029667}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1910993774
+--- !u!114 &1910993777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910993772}
+  m_GameObject: {fileID: 321726006}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f0709d3c56f7a944b546f565dd827f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level_1
+--- !u!64 &1910993778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321726006}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

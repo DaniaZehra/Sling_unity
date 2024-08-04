@@ -15,9 +15,8 @@ public class Launcher : MonoBehaviour
     private Vector3 endMousePosition;
 
     public LineRenderer trajectoryLine;
-    public float recoilForceMagnitude = 3f;
+    public float recoilForceMagnitude = 1f;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -79,6 +78,7 @@ public class Launcher : MonoBehaviour
 
             Vector3 aimDirection = (endMousePosition - startMousePosition).normalized;
             Vector3 recoilForce = -aimDirection * recoilForceMagnitude;
+            Debug.Log("recoilForce : " + recoilForce);
             rb.AddForce(recoilForce, ForceMode.Impulse);
 
         }
