@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1707410326588555259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.27, y: -0.2, z: 2.42}
+  m_LocalPosition: {x: 370.83087, y: -120.14322, z: 289.80807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -135,7 +135,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!120 &3113408038276286934
 LineRenderer:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707410326588555259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3619d4f3988bf3841ae123254f7799de, type: 3}
   m_Name: 
@@ -256,6 +256,7 @@ MonoBehaviour:
   launchPoint: {fileID: 8405653753831902288}
   startMousePosition: {x: 0, y: 0, z: 0}
   endMousePosition: {x: 0, y: 0, z: 0}
+  launchForce: {x: 0, y: 0, z: 0}
   maxLaunchForce: 7.5
   destroyed: 1
 --- !u!65 &2457705932412939612

@@ -1373,7 +1373,7 @@ Transform:
   m_GameObject: {fileID: 1128172314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3444, y: 0.762, z: -0.017}
+  m_LocalPosition: {x: 0.1474, y: 0.8454, z: -0.0852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2169,10 +2169,10 @@ PrefabInstance:
       addedObject: {fileID: 1547948381}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 771780d455b87334ab5946f7bf284359, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1547948380}
+      addedObject: {fileID: 1547948384}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 771780d455b87334ab5946f7bf284359, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1547948384}
+      addedObject: {fileID: 1547948385}
   m_SourcePrefab: {fileID: 100100000, guid: 771780d455b87334ab5946f7bf284359, type: 3}
 --- !u!4 &1547948378 stripped
 Transform:
@@ -2184,23 +2184,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 771780d455b87334ab5946f7bf284359, type: 3}
   m_PrefabInstance: {fileID: 1547948377}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1547948380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547948379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e8077a1ba121d489e6ed67e5550bf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
-  spawnPosition: {fileID: 1128172315}
-  maxLaunchForce: 35
-  trajectoryLine: {fileID: 0}
-  recoilForceMagnitude: 3
 --- !u!54 &1547948381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2226,7 +2209,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!120 &1547948382
 LineRenderer:
@@ -2355,6 +2338,21 @@ CapsuleCollider:
   m_Height: 0.2
   m_Direction: 1
   m_Center: {x: -10.681377, y: 0.31599954, z: -78.58497}
+--- !u!114 &1547948385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547948379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602e660d22800014db662b641e465a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
+  shootPoint: {fileID: 1128172315}
+  projectileSpeed: 10
 --- !u!1001 &1586720635
 PrefabInstance:
   m_ObjectHideFlags: 0
