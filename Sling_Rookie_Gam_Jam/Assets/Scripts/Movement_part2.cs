@@ -7,6 +7,7 @@ public class Movement_part2 : MonoBehaviour
     public Transform launchPoint;
     public Vector3 startMousePosition;
     public Vector3 endMousePosition;
+    public Vector3 launchForce;
     bool IsAiming;
     public float maxLaunchForce = 35f;
     private LineRenderer trajectoryLine;
@@ -54,10 +55,10 @@ public class Movement_part2 : MonoBehaviour
          Debug.Log("maunchForce: " + maxLaunchForce);
 
         rb.isKinematic = false;
-        rb.velocity = aimDirection * maxLaunchForce;// Apply high initial velocity
-
+        launchForce = maxLaunchForce*aimDirection;
+        rb.AddForce(launchForce, ForceMode.Impulse);
         Debug.Log("velocity: " + rb.velocity);
-        Debug.Log("launchForce: " + maxLaunchForce);
+        Debug.Log("launchForce: " + launchForce);
         Destroy(gameObject,2.0f);
     }
 

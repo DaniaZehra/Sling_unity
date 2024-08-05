@@ -135,7 +135,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!120 &3113408038276286934
 LineRenderer:
@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 8405653753831902288}
-  gravity_multiplier: 0.5
   startMousePosition: {x: 0, y: 0, z: 0}
   endMousePosition: {x: 0, y: 0, z: 0}
   maxLaunchForce: 7.5
