@@ -2023,10 +2023,10 @@ PrefabInstance:
       addedObject: {fileID: 1559304272}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1559304271}
+      addedObject: {fileID: 1559304274}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1559304274}
+      addedObject: {fileID: 1559304275}
   m_SourcePrefab: {fileID: 100100000, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
 --- !u!4 &1559304269 stripped
 Transform:
@@ -2038,23 +2038,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
   m_PrefabInstance: {fileID: 1559304268}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1559304271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559304270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e8077a1ba121d489e6ed67e5550bf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
-  spawnPosition: {fileID: 1865048257}
-  maxLaunchForce: 7.5
-  trajectoryLine: {fileID: 0}
-  recoilForceMagnitude: 3
 --- !u!120 &1559304272
 LineRenderer:
   serializedVersion: 2
@@ -2207,6 +2190,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1559304275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559304270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602e660d22800014db662b641e465a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
+  shootPoint: {fileID: 1865048257}
+  projectileSpeed: 10
 --- !u!1001 &1581272005
 PrefabInstance:
   m_ObjectHideFlags: 0
