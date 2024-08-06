@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TapToPlay: MonoBehaviour
 {
-        public string scene;
+        public string scene="Level_1";
         void Update(){
         if(Input.GetMouseButton(0)){
           SceneSwitch();  

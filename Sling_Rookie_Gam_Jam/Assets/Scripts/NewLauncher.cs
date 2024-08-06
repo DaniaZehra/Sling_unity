@@ -1,24 +1,32 @@
 using UnityEngine;
+using System.Collections;
 
 public class NewLauncher : MonoBehaviour
 {
-    public GameObject projectilePrefab; 
-    public Transform shootPoint; 
-    public float projectileSpeed = 10f; 
+    public GameObject projectilePrefab;
+    public Transform shootPoint;
+    public float projectileSpeed = 50f;
     public int trajectoryPoints = 30;
-    public float timeBetweenPoints = 0.1f;
+    public float timeBetweenPoints = 1f;
+    public float recoilForce = 0.5f; // Very small recoil force magnitude
     private bool isAiming;
     private LineRenderer lineRender;
+    private Rigidbody rb;
+    private Animator animator;
 
-    void Start(){
+    void Start()
+    {
         lineRender = GetComponent<LineRenderer>();
         lineRender.material = new Material(Shader.Find("Sprites/Default"));
         lineRender.startWidth = 0.1f;
         lineRender.endWidth = 0.1f;
+        rb = GetComponent<Rigidbody>(); // Get the Rigidbody component
+        animator = GetComponent<Animator>(); // Get the Animator component if available
     }
+
     void Update()
     {
-       if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonDown(0))
         {
             isAiming = true;
         }
@@ -29,7 +37,7 @@ public class NewLauncher : MonoBehaviour
             ShowTrajectory();
         }
 
-        if (Input.GetMouseButtonUp(0)) 
+        if (Input.GetMouseButtonUp(0))
         {
             if (isAiming)
             {
@@ -56,11 +64,43 @@ public class NewLauncher : MonoBehaviour
     void Shoot()
     {
         GameObject projectile = Instantiate(projectilePrefab, shootPoint.position, shootPoint.rotation);
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        rb.velocity = shootPoint.forward * projectileSpeed;
+        Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
+        projectileRb.velocity = shootPoint.forward * projectileSpeed;
+
+        StartCoroutine(ApplyRecoil()); // Apply recoil to the launcher
     }
-    void ShowTrajectory(){
-         Vector3[] points = new Vector3[trajectoryPoints];
+
+    IEnumerator ApplyRecoil()
+    {
+        Vector3 recoilDirection = -shootPoint.forward; // Recoil is in the opposite direction of the shot
+        float startTime = Time.time;
+
+        while (Time.time < startTime + 0.4f)
+        {
+            if (animator != null && animator.enabled)
+            {
+                animator.enabled = false; // Disable Animator during recoil
+            }
+
+            rb.AddForce(recoilDirection * recoilForce, ForceMode.Impulse); // Apply an impulse force
+            yield return null; // Wait until the next frame
+        }
+
+        if (animator != null)
+        {
+            animator.enabled = true; // Re-enable Animator after recoil
+        }
+
+        // Optionally, stop the launcher completely after the recoil duration
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        Debug.Log("Recoil applied with force: " + (recoilDirection * recoilForce).ToString());
+    }
+
+    void ShowTrajectory()
+    {
+        Vector3[] points = new Vector3[trajectoryPoints];
         Vector3 startingPosition = shootPoint.position;
         Vector3 startingVelocity = shootPoint.forward * projectileSpeed;
 

@@ -468,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.86
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1126,7 +1126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 5013553211217446955, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2148,7 +2148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 771780d455b87334ab5946f7bf284359, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 771780d455b87334ab5946f7bf284359, type: 3}
       propertyPath: m_Controller
@@ -2192,7 +2192,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547948379}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2353,6 +2353,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
   shootPoint: {fileID: 1128172315}
   projectileSpeed: 10
+  trajectoryPoints: 30
+  timeBetweenPoints: 0.1
+  recoilForce: 5
 --- !u!1001 &1586720635
 PrefabInstance:
   m_ObjectHideFlags: 0
