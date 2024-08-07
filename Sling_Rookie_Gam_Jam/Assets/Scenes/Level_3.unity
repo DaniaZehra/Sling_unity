@@ -2164,8 +2164,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2205,6 +2205,9 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
   shootPoint: {fileID: 1865048257}
   projectileSpeed: 10
+  trajectoryPoints: 30
+  timeBetweenPoints: 1
+  recoilForce: 0.5
 --- !u!1001 &1581272005
 PrefabInstance:
   m_ObjectHideFlags: 0

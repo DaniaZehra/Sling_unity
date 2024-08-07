@@ -4,11 +4,11 @@ using System.Collections;
 public class NewLauncher : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    public Transform shootPoint;
-    public float projectileSpeed = 50f;
+    public Transform shootPoint; // Ensure this is assigned in the Inspector
+    public float projectileSpeed = 50f; // Increased projectile speed for a straighter trajectory
     public int trajectoryPoints = 30;
-    public float timeBetweenPoints = 1f;
-    public float recoilForce = 0.5f; // Very small recoil force magnitude
+    public float timeBetweenPoints = 0.1f;
+    public float recoilForce = 0.05f; // Very small recoil force magnitude
     private bool isAiming;
     private LineRenderer lineRender;
     private Rigidbody rb;
@@ -73,6 +73,7 @@ public class NewLauncher : MonoBehaviour
     IEnumerator ApplyRecoil()
     {
         Vector3 recoilDirection = -shootPoint.forward; // Recoil is in the opposite direction of the shot
+        recoilDirection.y = 0; // Zero out the y-component to keep y-axis constant
         float startTime = Time.time;
 
         while (Time.time < startTime + 0.4f)
