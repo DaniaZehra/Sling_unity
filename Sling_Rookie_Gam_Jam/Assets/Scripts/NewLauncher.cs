@@ -13,6 +13,7 @@ public class NewLauncher : MonoBehaviour
     private LineRenderer lineRender;
     private Rigidbody rb;
     private Animator animator;
+    public double t = 0.4f;
 
     void Start()
     {
@@ -68,7 +69,8 @@ public class NewLauncher : MonoBehaviour
         projectileRb.velocity = shootPoint.forward * projectileSpeed;
 
         StartCoroutine(ApplyRecoil()); // Apply recoil to the launcher
-    }
+        t += 0.01;
+}
 
     IEnumerator ApplyRecoil()
     {
@@ -76,7 +78,7 @@ public class NewLauncher : MonoBehaviour
         recoilDirection.y = 0; // Zero out the y-component to keep y-axis constant
         float startTime = Time.time;
 
-        while (Time.time < startTime + 0.4f)
+        while (Time.time < startTime + t)
         {
             if (animator != null && animator.enabled)
             {
