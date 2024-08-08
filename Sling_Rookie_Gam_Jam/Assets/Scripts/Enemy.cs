@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
         animator.SetTrigger("TriKill");
 
         // Wait for 2 seconds
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         // Destroy enemy game object
         Destroy(gameObject);

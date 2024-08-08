@@ -1,7 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonHandler : MonoBehaviour
+public class canvas3 : MonoBehaviour
 {
     public void GoToHomeScreen()
     {
@@ -10,12 +12,12 @@ public class ButtonHandler : MonoBehaviour
 
     public void ReplayLevel()
     {
-        SceneManager.LoadScene("Level_1"); // Reload current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload current scene
     }
 
     public void GoToNextLevel()
     {
-        string nextLevel = "Level_2"; // Ensure this is the correct name of your next level scene
+        string nextLevel = "Level_4"; // Ensure this is the correct name of your next level scene
         Debug.Log("Switching to scene: " + nextLevel);
         if (Application.CanStreamedLevelBeLoaded(nextLevel))
         {
