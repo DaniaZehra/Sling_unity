@@ -7,7 +7,7 @@ public class Enemy4 : MonoBehaviour
 
     static int totalEnemies = 5;
     private Animator animator;
-
+    
     void Start()
     {
         Debug.Log("Remaining Enemies: " + totalEnemies);

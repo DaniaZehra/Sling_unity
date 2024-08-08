@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     static int totalEnemies = 1;
     private Animator animator;
 
-
     void Start()
     {
         Debug.Log("Remaining Enemies: " + totalEnemies);
@@ -38,8 +37,6 @@ public class Enemy : MonoBehaviour
             {
                 Debug.Log("Enemy killed!");
                 Debug.Log("Level_1 completed");
-                new WaitForSeconds(2f);
-                SceneSwitch();
             }
         }
     }
@@ -49,10 +46,16 @@ public class Enemy : MonoBehaviour
         // Trigger kill animation
         animator.SetTrigger("TriKill");
 
-        // Wait for 1 second
-        yield return new WaitForSeconds(2f);
+        // Wait for 2 seconds
+        yield return new WaitForSeconds(3f);
 
         // Destroy enemy game object
         Destroy(gameObject);
+
+        // Wait for an additional 2 seconds before switching scene
+        //yield return new WaitForSeconds(1f);
+
+        // Switch the scene
+        SceneSwitch();
     }
 }
