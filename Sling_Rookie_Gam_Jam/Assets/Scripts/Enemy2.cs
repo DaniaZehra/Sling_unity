@@ -36,6 +36,7 @@ public class Enemy2 : MonoBehaviour
             {
                 Debug.Log("Enemy killed!");
                 Debug.Log("Level_2 completed");
+                totalEnemies = 3;
                 SceneSwitch();
             }
         }

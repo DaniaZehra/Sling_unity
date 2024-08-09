@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy5 : MonoBehaviour
 {
-
+    public string scene = "CL5";
     static int totalEnemies = 5;
     private Animator animator;
 
@@ -12,6 +13,11 @@ public class Enemy5 : MonoBehaviour
     {
         Debug.Log("Remaining Enemies: " + totalEnemies);
         animator = GetComponent<Animator>();
+    }
+
+    public void SceneSwitch()
+    {
+        SceneManager.LoadScene(scene);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -28,7 +34,9 @@ public class Enemy5 : MonoBehaviour
             else
             {
                 Debug.Log("Enemy killed!");
-                Debug.Log("Level_4 completed");
+                totalEnemies = 5;
+                Debug.Log("Level_5 completed");
+                SceneSwitch();
             }
         }
     }

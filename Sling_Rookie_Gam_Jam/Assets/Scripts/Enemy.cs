@@ -56,6 +56,7 @@ public class Enemy : MonoBehaviour
         //yield return new WaitForSeconds(1f);
 
         // Switch the scene
+        totalEnemies = 1;
         SceneSwitch();
     }
 }
