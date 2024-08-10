@@ -38,4 +38,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CL5.unity
     guid: 271b376d1b59ea34fb63bfaf621da5bc
+  - enabled: 1
+    path: Assets/Scenes/GO1.unity
+    guid: fabe5d9affbbec9429031f92e8ebf7d8
+  - enabled: 1
+    path: Assets/Scenes/GO2.unity
+    guid: e569bb87d1c46074f807ad9f1673445a
+  - enabled: 1
+    path: Assets/Scenes/GO3.unity
+    guid: 5c7dff645198b0e4aba240078af9bc82
+  - enabled: 1
+    path: Assets/Scenes/GO4.unity
+    guid: 5942597d43644be498512b3da5bda3c9
+  - enabled: 1
+    path: Assets/Scenes/GO5.unity
+    guid: cdf2538aac04d7e4fb107ebd7cef83b8
   m_configObjects: {}
