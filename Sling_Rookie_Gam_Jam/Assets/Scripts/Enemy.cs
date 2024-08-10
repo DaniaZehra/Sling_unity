@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        totalEnemies = 1;
         Debug.Log("Remaining Enemies: " + totalEnemies);
         animator = GetComponent<Animator>();
     }
@@ -56,7 +57,7 @@ public class Enemy : MonoBehaviour
         //yield return new WaitForSeconds(1f);
 
         // Switch the scene
-        totalEnemies = 1;
+        //totalEnemies = 1;
         SceneSwitch();
     }
 }

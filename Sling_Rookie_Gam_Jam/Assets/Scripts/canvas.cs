@@ -10,8 +10,13 @@ public class ButtonHandler : MonoBehaviour
 
     public void ReplayLevel()
     {
-        SceneManager.LoadScene("Level_1"); // Reload current scene
+        // Get the name of the currently active scene
+        string currentSceneName = "Level_1";
+
+        // Reload the current scene
+        SceneManager.LoadScene(currentSceneName);
     }
+
 
     public void GoToNextLevel()
     {

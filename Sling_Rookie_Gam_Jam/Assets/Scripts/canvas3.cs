@@ -12,7 +12,7 @@ public class canvas3 : MonoBehaviour
 
     public void ReplayLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload current scene
+        SceneManager.LoadScene("Level_3"); // Reload current scene
     }
 
     public void GoToNextLevel()
