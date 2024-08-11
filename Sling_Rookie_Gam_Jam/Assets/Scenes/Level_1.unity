@@ -738,6 +738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd83f75fb283844bbc6ef6aec0410dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL1
 --- !u!136 &483417877
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1685,6 +1686,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1707410326588555259, guid: 4f75d2119aa32b84cb5bc9836c65394b, type: 3}
   shootPoint: {fileID: 1706228452}
   projectileSpeed: 10
+  trajectoryPoints: 30
+  timeBetweenPoints: 0.1
+  recoilForce: 0.05
+  t: 0.4000000059604645
 --- !u!1001 &1145113487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1707,15 +1712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.62
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.34
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.62
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1766,8 +1771,32 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

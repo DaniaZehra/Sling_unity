@@ -566,6 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbcdafba9937746896b446541e4c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL2
 --- !u!1 &490223212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5681406076718862993, guid: 741048bbe1597de4a986d40a7359e172, type: 3}
@@ -1204,6 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbcdafba9937746896b446541e4c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL2
 --- !u!1001 &1090790187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2116,6 +2118,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 771780d455b87334ab5946f7bf284359, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 771780d455b87334ab5946f7bf284359, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2848,6 +2874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dbcdafba9937746896b446541e4c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL2
 --- !u!1001 &1810903545
 PrefabInstance:
   m_ObjectHideFlags: 0

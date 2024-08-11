@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebd93735d35b1540b4300d4afaddf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL3
 --- !u!1001 &250386242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -588,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebd93735d35b1540b4300d4afaddf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL3
 --- !u!1001 &361577174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,6 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebd93735d35b1540b4300d4afaddf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL3
 --- !u!1001 &1025759860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2008,6 +2011,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Robot@Idle Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758194957373749646, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042940087036422592, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2211,6 +2238,7 @@ MonoBehaviour:
   trajectoryPoints: 30
   timeBetweenPoints: 1
   recoilForce: 0.5
+  t: 0.4000000059604645
 --- !u!114 &1559304276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3118,6 +3146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebd93735d35b1540b4300d4afaddf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
