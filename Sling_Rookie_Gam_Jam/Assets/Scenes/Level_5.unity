@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f240722742ee4a975cd82745be144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL5
 --- !u!1 &67633510
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,11 +448,24 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4219333817343177906, guid: dcccae8e4d8234e82bebbb88f979ca13, type: 3}
+--- !u!114 &182661700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182661687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec97093abec5cf44b0ec4397dbb5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: GO5
 --- !u!1001 &250718989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -686,6 +700,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012692207274, guid: e0ff6ad1f211ef64cb2020c9fe9b5529, type: 3}
   m_PrefabInstance: {fileID: 276587138}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &303282742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1679624989060786785, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+  m_PrefabInstance: {fileID: 1211068402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &303282745
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303282742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.24283165
+  m_Height: 0.48566344
+  m_Direction: 1
+  m_Center: {x: 0.03819509, y: -0.012758773, z: 0.921485}
 --- !u!1001 &322835735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,6 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f240722742ee4a975cd82745be144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL5
 --- !u!1001 &341244497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1016,6 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f240722742ee4a975cd82745be144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL5
 --- !u!1001 &365165749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1402,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169594459447564929, guid: 8b57bc9c835784a5c9d30686ddb7c80c, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9169594459447564929, guid: 8b57bc9c835784a5c9d30686ddb7c80c, type: 3}
       propertyPath: m_ProvidesContacts
@@ -1415,6 +1459,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3740652380937166069, guid: 8b57bc9c835784a5c9d30686ddb7c80c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182661694}
+    - targetCorrespondingSourceObject: {fileID: 3740652380937166069, guid: 8b57bc9c835784a5c9d30686ddb7c80c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182661700}
   m_SourcePrefab: {fileID: 100100000, guid: 8b57bc9c835784a5c9d30686ddb7c80c, type: 3}
 --- !u!1001 &559524990
 PrefabInstance:
@@ -2176,6 +2223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Robot@Idle Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 1679624989060786785, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      propertyPath: m_TagString
+      value: Sling
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2201,6 +2252,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1211068410}
+    - targetCorrespondingSourceObject: {fileID: 1679624989060786785, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 303282745}
   m_SourcePrefab: {fileID: 100100000, guid: 009cfb648b7e3af439bb5af2e32436b3, type: 3}
 --- !u!4 &1211068403 stripped
 Transform:
@@ -2422,6 +2476,7 @@ MonoBehaviour:
   trajectoryPoints: 30
   timeBetweenPoints: 0.5
   recoilForce: 0.5
+  t: 0.4000000059604645
 --- !u!1001 &1274945283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2620,6 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f240722742ee4a975cd82745be144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL5
 --- !u!1 &1493869745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,6 +3558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f240722742ee4a975cd82745be144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: CL5
 --- !u!1001 &2091517615
 PrefabInstance:
   m_ObjectHideFlags: 0
