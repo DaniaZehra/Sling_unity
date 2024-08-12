@@ -70,7 +70,7 @@ public class NewLauncher : MonoBehaviour
 
         StartCoroutine(ApplyRecoil()); // Apply recoil to the launcher
         t += 0.01;
-}
+    }
 
     IEnumerator ApplyRecoil()
     {
